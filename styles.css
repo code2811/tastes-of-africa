@@ -1,0 +1,285 @@
+/* Google Fonts */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff8f0;
+  color: #3d2c1e;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  color: #a63c06;
+}
+
+nav {
+  background: #f4c95d;
+  padding: 1rem 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #3d2c1e;
+  font-weight: bold;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+nav a:hover {
+  color: #a63c06;
+  border-bottom: 2px solid #a63c06;
+}
+
+.hero {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  background: rgba(255, 248, 240, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero-video {
+  margin-top: 1rem;
+}
+
+.featured-dishes {
+  padding: 2rem 1rem;
+}
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+figure {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(166, 60, 6, 0.08);
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+figcaption {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.explore-region {
+  background: #f4c95d;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+.explore-region ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.food-trends article {
+  background: #fff;
+  border-left: 5px solid #a63c06;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+mark {
+  background: #f4c95d;
+  color: #a63c06;
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+}
+
+.recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.recipe-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(166, 60, 6, 0.08);
+  padding: 1rem;
+  position: relative;
+}
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.recipe-card details {
+  margin: 1rem 0;
+}
+.recipe-card ul, .recipe-card ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+.recipe-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.recipe-card th, .recipe-card td {
+  border: 1px solid #f4c95d;
+  padding: 0.5rem;
+  text-align: center;
+}
+.recipe-card iframe {
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+}
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #a63c06;
+  transition: color 0.2s;
+}
+.favorite-btn.favorited {
+  color: #e63946;
+}
+
+.recipe-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.recipe-filters button {
+  background: #f4c95d;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  color: #3d2c1e;
+  transition: background 0.2s, color 0.2s;
+}
+.recipe-filters button:hover, .recipe-filters button.active {
+  background: #a63c06;
+  color: #fff8f0;
+}
+
+footer {
+  background: #f4c95d;
+  padding: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+footer form {
+  margin-bottom: 1rem;
+}
+
+/* Contact Form Styling */
+#contact-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(166, 60, 6, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact-form label {
+  font-weight: bold;
+}
+#contact-form input, #contact-form textarea, #contact-form select {
+  padding: 0.5rem;
+  border: 1px solid #f4c95d;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+#contact-form input:focus, #contact-form textarea:focus, #contact-form select:focus {
+  outline: none;
+  border-color: #a63c06;
+  box-shadow: 0 0 0 2px #f4c95d;
+}
+#contact-form button {
+  background: #a63c06;
+  color: #fff8f0;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  transition: background 0.2s;
+}
+#contact-form button:hover {
+  background: #f4c95d;
+  color: #a63c06;
+}
+
+/* Newsletter form */
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#newsletter input[type="email"] {
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid #a63c06;
+  font-size: 1rem;
+}
+#newsletter button {
+  background: #a63c06;
+  color: #fff8f0;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#newsletter button:hover {
+  background: #f4c95d;
+  color: #a63c06;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .dishes-grid, .recipes-list {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero {
+    min-height: 220px;
+  }
+}

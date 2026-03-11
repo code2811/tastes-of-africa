@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="regions.html">Regions</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Signature African Recipes</h1>
+    <div class="recipe-filters">
+      <button data-region="all">All</button>
+      <button data-region="west-africa">West Africa</button>
+      <button data-region="north-africa">North Africa</button>
+      <button data-region="east-africa">East Africa</button>
+      <button data-region="south-africa">South Africa</button>
+    </div>
+    <section class="recipes-list">
+      <article class="recipe-card" data-region="west-africa" id="jollof">
+        <h2>Jollof Rice</h2>
+        <img src="images/jollof.jpg" alt="Jollof Rice">
+        <p>A beloved West African dish made with rice, tomatoes, and spices. <mark>Tomatoes</mark> and <mark>scotch bonnet peppers</mark> give it a unique flavor.</p>
+        <details>
+          <summary>Cooking Instructions</summary>
+          <ol>
+            <li>Sauté onions, garlic, and peppers.</li>
+            <li>Add tomatoes and cook down.</li>
+            <li>Stir in rice, broth, and spices. Simmer until done.</li>
+          </ol>
+        </details>
+        <ul>
+          <li>2 cups rice</li>
+          <li>1 can tomatoes</li>
+          <li>1 onion</li>
+          <li>2 scotch bonnet peppers</li>
+          <li>Spices: thyme, curry, bay leaf</li>
+        </ul>
+        <iframe width="300" height="169" src="https://www.youtube.com/embed/1zj4M5bH9JY" title="Jollof Rice Tutorial" frameborder="0" allowfullscreen></iframe>
+        <table>
+          <caption>Nutritional Facts (per serving)</caption>
+          <tr><th>Calories</th><th>Carbs</th><th>Protein</th></tr>
+          <tr><td>350</td><td>60g</td><td>6g</td></tr>
+        </table>
+        <iframe src="https://www.google.com/maps?q=Nigeria&output=embed" width="200" height="100" style="border:0;"></iframe>
+        <button class="favorite-btn" data-id="jollof">❤️ Favorite</button>
+      </article>
+      <article class="recipe-card" data-region="north-africa" id="tagine">
+        <h2>Moroccan Tagine</h2>
+        <img src="images/tagine.jpg" alt="Tagine">
+        <p>A slow-cooked stew with <mark>spices</mark>, vegetables, and meat, cooked in a traditional clay pot.</p>
+        <details>
+          <summary>Cooking Instructions</summary>
+          <ol>
+            <li>Brown meat and onions in oil.</li>
+            <li>Add spices, vegetables, and broth.</li>
+            <li>Simmer in tagine pot until tender.</li>
+          </ol>
+        </details>
+        <ul>
+          <li>500g lamb or chicken</li>
+          <li>2 onions</li>
+          <li>Carrots, potatoes</li>
+          <li>Spices: cumin, coriander, cinnamon</li>
+        </ul>
+        <iframe width="300" height="169" src="https://www.youtube.com/embed/1zj4M5bH9JY" title="Tagine Tutorial" frameborder="0" allowfullscreen></iframe>
+        <table>
+          <caption>Nutritional Facts (per serving)</caption>
+          <tr><th>Calories</th><th>Carbs</th><th>Protein</th></tr>
+          <tr><td>400</td><td>30g</td><td>20g</td></tr>
+        </table>
+        <iframe src="https://www.google.com/maps?q=Morocco&output=embed" width="200" height="100" style="border:0;"></iframe>
+        <button class="favorite-btn" data-id="tagine">❤️ Favorite</button>
+      </article>
+      <article class="recipe-card" data-region="east-africa" id="injera">
+        <h2>Ethiopian Injera</h2>
+        <img src="images/injera.jpg" alt="Injera">
+        <p>A spongy flatbread made from <mark>teff</mark> flour, a staple in Ethiopian cuisine.</p>
+        <details>
+          <summary>Cooking Instructions</summary>
+          <ol>
+            <li>Mix teff flour and water, ferment overnight.</li>
+            <li>Pour batter on hot pan, cook until bubbles form.</li>
+          </ol>
+        </details>
+        <ul>
+          <li>2 cups teff flour</li>
+          <li>2 cups water</li>
+          <li>Pinch of salt</li>
+        </ul>
+        <iframe width="300" height="169" src="https://www.youtube.com/embed/1zj4M5bH9JY" title="Injera Tutorial" frameborder="0" allowfullscreen></iframe>
+        <table>
+          <caption>Nutritional Facts (per serving)</caption>
+          <tr><th>Calories</th><th>Carbs</th><th>Protein</th></tr>
+          <tr><td>200</td><td>40g</td><td>5g</td></tr>
+        </table>
+        <iframe src="https://www.google.com/maps?q=Ethiopia&output=embed" width="200" height="100" style="border:0;"></iframe>
+        <button class="favorite-btn" data-id="injera">❤️ Favorite</button>
+      </article>
+      <article class="recipe-card" data-region="south-africa" id="bunnychow">
+        <h2>Bunny Chow</h2>
+        <img src="images/bunny-chow.jpg" alt="Bunny Chow">
+        <p>A South African street food: hollowed bread filled with spicy curry. <mark>Curry powder</mark> and <mark>chutney</mark> are key ingredients.</p>
+        <details>
+          <summary>Cooking Instructions</summary>
+          <ol>
+            <li>Prepare curry with meat or beans.</li>
+            <li>Hollow out bread loaf, fill with curry.</li>
+          </ol>
+        </details>
+        <ul>
+          <li>1 loaf white bread</li>
+          <li>500g beef or beans</li>
+          <li>Onion, tomato, curry powder</li>
+        </ul>
+        <iframe width="300" height="169" src="https://www.youtube.com/embed/1zj4M5bH9JY" title="Bunny Chow Tutorial" frameborder="0" allowfullscreen></iframe>
+        <table>
+          <caption>Nutritional Facts (per serving)</caption>
+          <tr><th>Calories</th><th>Carbs</th><th>Protein</th></tr>
+          <tr><td>500</td><td>70g</td><td>15g</td></tr>
+        </table>
+        <iframe src="https://www.google.com/maps?q=South+Africa&output=embed" width="200" height="100" style="border:0;"></iframe>
+        <button class="favorite-btn" data-id="bunnychow">❤️ Favorite</button>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <form id="newsletter">
+      <label for="newsletter-email">Sign up for our newsletter:</label>
+      <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2026 Tastes of Africa</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="regions.html">Regions</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Welcome to Tastes of Africa</h1>
+      <p>Discover the vibrant flavors and rich traditions of African cuisine.</p>
+      <div class="hero-video">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/1zj4M5bH9JY" title="African Food Culture" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="featured-dishes">
+      <h2>Featured Dishes</h2>
+      <div class="dishes-grid">
+        <figure data-region="west-africa">
+          <img src="images/jollof.jpg" alt="Jollof Rice">
+          <figcaption>Jollof Rice<br><a href="recipes.html#jollof">See Recipe</a></figcaption>
+        </figure>
+        <figure data-region="north-africa">
+          <img src="images/tagine.jpg" alt="Tagine">
+          <figcaption>Moroccan Tagine<br><a href="recipes.html#tagine">See Recipe</a></figcaption>
+        </figure>
+        <figure data-region="east-africa">
+          <img src="images/injera.jpg" alt="Injera">
+          <figcaption>Ethiopian Injera<br><a href="recipes.html#injera">See Recipe</a></figcaption>
+        </figure>
+        <figure data-region="south-africa">
+          <img src="images/bunny-chow.jpg" alt="Bunny Chow">
+          <figcaption>Bunny Chow<br><a href="recipes.html#bunnychow">See Recipe</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="explore-region">
+      <h2>Explore by Region</h2>
+      <ul>
+        <li><a href="regions.html#west">West Africa</a></li>
+        <li><a href="regions.html#north">North Africa</a></li>
+        <li><a href="regions.html#east">East Africa</a></li>
+      </ul>
+    </section>
+    <section class="food-trends">
+      <h2>Latest Food Trends</h2>
+      <article>
+        <h3>Superfoods on the Rise</h3>
+        <p>Ingredients like <mark>teff</mark> and <mark>fonio</mark> are gaining global popularity for their nutrition and flavor.</p>
+      </article>
+      <article>
+        <h3>Fusion Cuisine</h3>
+        <p>Chefs are blending African spices such as <mark>berbere</mark> and <mark>suya</mark> with international dishes.</p>
+      </article>
+      <article>
+        <h3>Street Food Culture</h3>
+        <p>From <mark>kebabs</mark> to <mark>puff-puff</mark>, African street food is making waves worldwide.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <form id="newsletter">
+      <label for="newsletter-email">Sign up for our newsletter:</label>
+      <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2026 Tastes of Africa</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

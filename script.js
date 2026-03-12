@@ -57,8 +57,16 @@ if (contactForm) {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
     const message = document.getElementById('message').value.trim();
+    
+    // Remove any existing error messages
+    const existingError = document.querySelector('.error-message');
+    if (existingError) existingError.remove();
+    
     if (message.length <= 20) {
-      alert('Message must be more than 20 characters.');
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error-message';
+      errorDiv.innerHTML = '<p>⚠️ Message must be more than 20 characters.</p>';
+      contactForm.insertBefore(errorDiv, contactForm.firstChild);
       return;
     }
     contactForm.style.display = 'none';

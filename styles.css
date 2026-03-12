@@ -1,8 +1,9 @@
 /* Google Fonts */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: #fff8f0;
-  color: #3d2c1e;
+  background: #FAF3E0; /* Cream/Off-white */
+  color: #3E1F00;      /* Dark Brown */
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -11,11 +12,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Ubuntu', Arial, sans-serif;
-  color: #a63c06;
+  color: #C0392B; /* Earthy Red */
 }
 
 nav {
-  background: #f4c95d;
+  background: #E8A020; /* Deep Saffron/Turmeric yellow */
   padding: 1rem 0;
 }
 nav ul {
@@ -28,13 +29,13 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  color: #3d2c1e;
+  color: #3E1F00; /* Dark Brown */
   font-weight: bold;
   transition: color 0.2s, border-bottom 0.2s;
 }
 nav a:hover {
-  color: #a63c06;
-  border-bottom: 2px solid #a63c06;
+  color: #C0392B; /* Earthy Red */
+  border-bottom: 2px solid #C0392B;
 }
 
 .hero {
@@ -86,10 +87,25 @@ figcaption {
 }
 
 .explore-region {
-  background: #f4c95d;
+  background: #E8A020; /* Deep Saffron/Turmeric yellow */
   padding: 1rem;
   border-radius: 1rem;
   margin: 2rem 0;
+}
+/* Accent: Forest Green for buttons, highlights, etc. */
+.accent-green {
+  color: #fff;
+  background: #2D6A4F;
+}
+
+/* Example: Use .accent-green on buttons or call-to-actions */
+button, .favorite-btn.favorited {
+  background: #2D6A4F;
+  color: #fff;
+}
+button:hover, .favorite-btn.favorited:hover {
+  background: #C0392B;
+  color: #fff;
 }
 .explore-region ul {
   display: flex;
